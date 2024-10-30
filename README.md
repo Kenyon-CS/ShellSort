@@ -15,12 +15,12 @@
 1. **Gap Sequence**: The array is first sorted with a large gap (```n/2```). Then the gap is reduced to half, and the process repeats.
 2. **Sorting Within Gaps**: For each gap, elements that are gap positions apart are sorted relative to each other.
 3. **Final Pass with Gap = 1**: This final pass works like a traditional insertion sort, but with fewer elements to shift, thanks to the previous gapped sorting passes.
-Shell Sort Characteristics:
 
-**Time Complexity**: Varies depending on the gap sequence used. Typically between O(n<sup>3/2</sup>) and 
+## Shell Sort Characteristics:
+  - **Time Complexity**: Varies depending on the gap sequence used. Typically between O(n<sup>3/2</sup>) and 
 𝑂(𝑛<sup>2</sup>) in most cases, but can be close to 𝑂(𝑛log<sup>2</sup>𝑛) with optimized gaps.
-**Space Complexit**y: 
+  - **Space Complexit**y: 
 𝑂(1) since it’s an in-place sort.
-**Stability**: Not stable, as it can change the relative order of equal elements.
+  - **Stability**: Not stable, as it can change the relative order of equal elements.
 
 This example shows how Shell Sort works, with its characteristic gap-based sorting approach, which makes it more efficient than simple quadratic sorts like Bubble Sort or Insertion Sort for larger arrays.
